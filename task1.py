@@ -8,6 +8,10 @@
 # block so that the user will allow them to enter an integer,
 # or display an error message if they enter in something else.
 
-number = input("Please enter in an integer value")
-number = int(number)
-print(number)
+n = input("Please enter in an integer value")
+
+try:
+    n = int(n)
+    print(f"You entered \"{n}.\"")
+except:
+    print("Error: Your input was a string, and not a number.")

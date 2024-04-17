@@ -19,3 +19,11 @@ The reciprocal of 3 is 0.3333333333333333
 Enter a number: 4
 The reciprocal of 4 is 0.25
 """
+
+n = input("Lord Beelzebub would like you to enter a number \n to convert into a reciprocal: ")
+try:
+    n = int(n)
+    an = 1 / n
+    print(f"The reciprocal of {n} is {an}.")
+except:
+    print("Error: You entered a string and not a intager, the program will now terminate.")
